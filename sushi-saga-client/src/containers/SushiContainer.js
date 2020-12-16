@@ -6,11 +6,9 @@ const SushiContainer = (props) => {
     <Fragment>
       <div className="belt">
         {
-          /* 
-             Render Sushi components here!
-          */
+          props.sushiData
         }
-        <MoreButton />
+        <MoreButton moreSushi = {props.moreSushi} />
       </div>
     </Fragment>
   )
